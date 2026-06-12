@@ -148,18 +148,18 @@ registrarTema({
         "<p><strong>A) La resistencia.</strong> Consume potencia en el circuito. Se fabrica con materiales como carbón o vidrio. Su valor se mide en <strong>ohmios (Ω)</strong>, en honor a Georg Simon Ohm. Su valor se indica con <strong>bandas de colores</strong> que se leen de izquierda a derecha: dos primeras bandas = cifras, tercera = multiplicador, y la banda más separada = <strong>tolerancia</strong> (dorado ±5 %, plateado ±10 %).</p>" +
         '<div class="tabla-scroll"><table><caption>Código de colores de las resistencias</caption>' +
         "<thead><tr><th>Color</th><th>Banda 1</th><th>Banda 2</th><th>Multiplicador</th><th>Tolerancia</th></tr></thead><tbody>" +
-        "<tr><td>Negro</td><td>0</td><td>0</td><td>×1</td><td>—</td></tr>" +
-        "<tr><td>Marrón</td><td>1</td><td>1</td><td>×10</td><td>±1 %</td></tr>" +
-        "<tr><td>Rojo</td><td>2</td><td>2</td><td>×100</td><td>±2 %</td></tr>" +
-        "<tr><td>Naranja</td><td>3</td><td>3</td><td>×1000</td><td>—</td></tr>" +
-        "<tr><td>Amarillo</td><td>4</td><td>4</td><td>×10 000</td><td>—</td></tr>" +
-        "<tr><td>Verde</td><td>5</td><td>5</td><td>×100 000</td><td>—</td></tr>" +
-        "<tr><td>Azul</td><td>6</td><td>6</td><td>×1 000 000</td><td>—</td></tr>" +
-        "<tr><td>Violeta</td><td>7</td><td>7</td><td>×10 000 000</td><td>—</td></tr>" +
-        "<tr><td>Gris</td><td>8</td><td>8</td><td>×100 000 000</td><td>—</td></tr>" +
-        "<tr><td>Blanco</td><td>9</td><td>9</td><td>×1 000 000 000</td><td>—</td></tr>" +
-        "<tr><td>Dorado</td><td>—</td><td>—</td><td>—</td><td>±5 %</td></tr>" +
-        "<tr><td>Plateado</td><td>—</td><td>—</td><td>—</td><td>±10 %</td></tr>" +
+        '<tr style="background:#111;color:#fff"><td>Negro</td><td>0</td><td>0</td><td>×1</td><td>—</td></tr>' +
+        '<tr style="background:#7b3f00;color:#fff"><td>Marrón</td><td>1</td><td>1</td><td>×10</td><td>±1 %</td></tr>' +
+        '<tr style="background:#e53e3e;color:#fff"><td>Rojo</td><td>2</td><td>2</td><td>×100</td><td>±2 %</td></tr>' +
+        '<tr style="background:#dd6b20;color:#fff"><td>Naranja</td><td>3</td><td>3</td><td>×1000</td><td>—</td></tr>' +
+        '<tr style="background:#ecc94b;color:#111"><td>Amarillo</td><td>4</td><td>4</td><td>×10 000</td><td>—</td></tr>' +
+        '<tr style="background:#38a169;color:#fff"><td>Verde</td><td>5</td><td>5</td><td>×100 000</td><td>—</td></tr>' +
+        '<tr style="background:#3182ce;color:#fff"><td>Azul</td><td>6</td><td>6</td><td>×1 000 000</td><td>—</td></tr>' +
+        '<tr style="background:#805ad5;color:#fff"><td>Violeta</td><td>7</td><td>7</td><td>×10 000 000</td><td>—</td></tr>' +
+        '<tr style="background:#a0aec0;color:#111"><td>Gris</td><td>8</td><td>8</td><td>×100 000 000</td><td>—</td></tr>' +
+        '<tr style="background:#f7fafc;color:#111;border:1px solid #cbd5e0"><td>Blanco</td><td>9</td><td>9</td><td>×1 000 000 000</td><td>—</td></tr>' +
+        '<tr style="background:#d4a843;color:#111"><td>Dorado</td><td>—</td><td>—</td><td>—</td><td>±5 %</td></tr>' +
+        '<tr style="background:#b0b8c1;color:#111"><td>Plateado</td><td>—</td><td>—</td><td>—</td><td>±10 %</td></tr>' +
         "</tbody></table></div>" +
         "<p><em>Ejemplo del libro:</em> rojo-violeta-naranja + dorado = 27 × 1000 = <strong>27 000 Ω (27 kΩ) ±5 %</strong>.</p>" +
         "<p><strong>B) El condensador.</strong> Quizá el componente más común en cualquier circuito. Su función es <strong>almacenar energía</strong>. Está formado por dos capas de metal separadas por un aislante o <strong>dieléctrico</strong>. Su capacidad se mide en <strong>faradios (F)</strong>. Tipos: mkp, cerámicos, electrolíticos, de lenteja, de papel…</p>" +
