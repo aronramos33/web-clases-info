@@ -220,6 +220,7 @@ registrarTema({
         "<li>Anclar el disipador <strong>presionando en cruz</strong> sobre sus anclajes (de fábrica ya vienen orientados para solo apretar).</li>" +
         "<li>Conectar el cable del disipador al conector <strong>CPU fan</strong>: tiene <strong>4 pines</strong>, el extra es el <strong>control PWM</strong>, que varía la velocidad de giro según la temperatura del micro (menos ruido).</li>" +
         "</ol>" +
+        '<figure class="figura"><img src="assets/img/tema5/fig5-10.jpg" alt="Secuencia de cuatro pasos con fotos: liberar el zócalo, colocar el microprocesador, fijarlo y colocar el disipador" loading="lazy"><figcaption>Figura 5.10 del libro — Ensamblado del procesador y sistema de refrigeración.</figcaption></figure>' +
         "<h4>Instalación de la memoria RAM</h4>" +
         "<p>El tipo de memoria <strong>tiene que ser compatible con la placa base</strong>. Las <strong>DDR4</strong> han cambiado la forma recta por una <strong>algo curvada</strong> para favorecer la inserción. Para <strong>dual, triple y quad channel</strong> se aconsejan memorias de calidad y del <strong>mismo modelo</strong> (capacidad y velocidad); pueden usarse distintas, pero irán a la velocidad de <strong>la más lenta</strong>.</p>"
     },
@@ -236,7 +237,9 @@ registrarTema({
         "<li><strong>Cables ATX:</strong> el de <strong>24 contactos</strong> y el <strong>ATX-12 V</strong>, para alimentar placa y procesador.</li>" +
         "<li><strong>USB 3.0 interno:</strong> diferente del USB 2.0 porque tiene <strong>más pines</strong>; da puertos rápidos frontales/laterales.</li>" +
         "<li><strong>Tarjeta wifi:</strong> se inserta en el slot <strong>PCI express X1</strong> (igual que muchas de sonido), <strong>reservando el X16</strong> para tarjetas rápidas como las gráficas. Trae dos anclajes (caja ATX y formato reducido) y hay que atornillarla bien para que no se desencaje.</li>" +
-        "</ul>"
+        "</ul>" +
+        '<figure class="figura"><img src="assets/img/tema5/fig5-13.jpg" alt="Secuencia de cuatro pasos con fotos: conectar el front panel, los ventiladores, los puertos USB y de sonido y el conector ATX 12V" loading="lazy"><figcaption>Figura 5.13 del libro — Cables de conexión de la placa base.</figcaption></figure>' +
+        '<figure class="figura"><img src="assets/img/tema5/fig5-16.jpg" alt="Dos fotos: inserción de la tarjeta wifi en el slot PCIe X1 y fijación al chasis" loading="lazy"><figcaption>Figura 5.16 del libro — Pasos en la instalación de una tarjeta wifi.</figcaption></figure>'
     },
     {
       titulo: "5.6 Sistemas de refrigeración líquida",
@@ -266,6 +269,7 @@ registrarTema({
         "<h4>2) Revisión del arranque</h4>" +
         "<p>En el primer arranque sin sistema operativo aparece <strong>«Reboot and select proper boot device…»</strong>: <strong>no es un error</strong>, avisa de que no hay dispositivo de arranque. Verlo suele ser <strong>buen augurio</strong>. Es aconsejable arrancar por primera vez <strong>con la caja abierta</strong> para observar los ventiladores. Comprobar ledes de encendido, disco y botón de reset.</p>" +
         "<p>La <strong>secuencia de arranque</strong> es el orden y prioridad con que la BIOS busca un dispositivo de arranque. Se suele configurar <strong>primero el pendrive/disco USB</strong> y luego la SSD/disco mecánico, para poder instalar el sistema operativo. A la BIOS se accede con <strong>F2</strong> o <strong>supr</strong>.</p>" +
+        '<figure class="figura"><img src="assets/img/tema5/fig5-29.jpg" alt="Pantalla de la BIOS con la configuración de la prioridad de arranque" loading="lazy"><figcaption>Figura 5.29 del libro — Configuración en la BIOS del dispositivo de arranque.</figcaption></figure>' +
         "<h4>3) Revisión del resto de componentes</h4>" +
         "<p>Verificar tarjeta wifi, unidad óptica, segunda unidad… y <strong>todos los puertos uno por uno</strong> (los USB de la caja, lector de tarjetas, conectores de sonido…).</p>"
     },

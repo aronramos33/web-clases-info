@@ -150,6 +150,7 @@ registrarTema({
         "<li><strong>Materiales aislantes</strong>: no permiten el paso de electrones. El más utilizado en electrónica es el <strong>plástico</strong>.</li>" +
         "<li><strong>Materiales conductores</strong>: permiten el paso de electrones. La <strong>plata</strong> y el <strong>cobre</strong> son sumamente conductores; por cualidades y precio se usa mucho el cobre.</li>" +
         "</ul>" +
+        '<figure class="figura"><img src="assets/img/tema7/fig7-02.jpg" alt="Materiales aislantes y conductores" loading="lazy"><figcaption>Figura 7.2 del libro — Materiales aislantes y conductores.</figcaption></figure>' +
         "<h4>Potencia</h4>" +
         "<p>Es la <strong>energía que consume un dispositivo</strong>. Se representa con la letra <strong>P</strong> y se expresa en <strong>vatios (W)</strong>. Cuando se dice que un dispositivo gasta 50 vatios, se entiende que es a la hora.</p>" +
         "<h4>Corriente continua y corriente alterna</h4>" +
@@ -206,6 +207,9 @@ registrarTema({
         "<ul>" +
         "<li><strong>Eficiencia</strong>: aceptable a partir del <strong>80 %</strong>; las de calidad superan el 90 %. El programa <strong>80+/80 PLUS</strong> cataloga las fuentes con eficiencia superior al 80 % (ahorran ≈ 33 % frente a una normal). Categorías: 80 PLUS, <strong>bronce, plata, oro, platino y titanio</strong> (titanio = la más eficiente).</li>" +
         "<li>Requisitos 80 PLUS: <strong>PFC ≥ 90 %</strong>, eficiencia mínima del 80 % probada con cargas del <strong>20, 50 y 100 %</strong>, y no ser redundantes, con las salidas típicas de 3,3 V, 5 V y 12 V.</li>" +
+        '</ul>' +
+        '<figure class="figura"><img src="assets/img/tema7/fig7-08.jpg" alt="Logotipos de la certificación 80 PLUS" loading="lazy"><figcaption>Figura 7.8 del libro — Categorías de la certificación 80 PLUS.</figcaption></figure>' +
+        '<ul>' +
         "<li>Ventajas: ahorro en la factura, disipan menos calor (menos aire acondicionado), necesitan menos potencia, <strong>se averían menos</strong> y contaminan menos.</li>" +
         "<li><strong>PFC</strong> (Power Factor Correction): las fuentes de calidad tienen PFC <strong>activo</strong> (si el fabricante no lo indica, no suele serlo); implica eficiencia > 90 %, mejor corriente de salida y menos interferencias electromagnéticas.</li>" +
         "<li><strong>Conexiones</strong>: las fuentes <strong>modulares</strong> (de calidad) permiten conectar solo los cables necesarios. Mínimo recomendable: <strong>tres cables SATA</strong>.</li>" +
@@ -237,6 +241,7 @@ registrarTema({
         "<li>Conectarla a la corriente: si el ventilador <strong>no gira</strong>, la fuente está averiada. Si gira, probablemente funcione, pero para asegurarlo hay que <strong>medir los voltajes</strong> (amarillo 12 V, rojo 5 V, naranja 3,3 V contra negro) con polímetro o tester. Si difieren mucho del nominal o fluctúan, la fuente puede estar averiada.</li>" +
         "</ol>" +
         "<p>El <strong>tester de fuentes</strong> es más rápido y sencillo que el polímetro: mide los voltajes y avisa si alguno está fuera de los parámetros normales.</p>" +
+        '<figure class="figura"><img src="assets/img/tema7/fig7-09.jpg" alt="Proceso de comprobación de una fuente de alimentación" loading="lazy"><figcaption>Figura 7.9 del libro — Proceso de comprobación de una fuente de alimentación.</figcaption></figure>' +
         "<h4>Origen de los fallos y reparación</h4>" +
         "<ul>" +
         "<li>Causas habituales: <strong>sobretensiones</strong> y <strong>sobrecalentamiento</strong> (evitar la suciedad y el polvo).</li>" +
@@ -268,6 +273,8 @@ registrarTema({
         "<li><strong>Interactivos</strong>: más sofisticados, añaden la función <strong>AVR</strong>. Solo usan la batería cuando falla el suministro (preservan su vida). Muy eficaces y fiables; no aconsejables por encima de <strong>5000 VA</strong>.</li>" +
         "<li><strong>Online (u online de conversión Delta)</strong>: gran capacidad; el <strong>inversor siempre está funcionando</strong>, de modo que la señal proviene únicamente del SAI: la de más alta calidad y estabilidad. Para salas de servidores, videovigilancia, instalaciones industriales y equipos críticos.</li>" +
         "</ul>" +
+        '<figure class="figura"><img src="assets/img/tema7/fig7-15.jpg" alt="Esquema de un SAI offline" loading="lazy"><figcaption>Figura 7.15 del libro — Esquema de funcionamiento de un SAI offline (stand by).</figcaption></figure>' +
+        '<figure class="figura"><img src="assets/img/tema7/fig7-16.jpg" alt="Esquema de un SAI interactivo" loading="lazy"><figcaption>Figura 7.16 del libro — Esquema de funcionamiento de un SAI interactivo.</figcaption></figure>' +
         "<p><strong>AVR</strong> (Automatic Voltage Regulator): regula el flujo eléctrico frente a subidas y bajadas de la red. Casi todos los SAI lo incluyen. <strong>Tiempo de conmutación</strong>: al detectar el fallo, el interruptor conmuta en <strong>2-10 milisegundos</strong> y el inversor pasa a suministrar la energía de las baterías.</p>" +
         "<h4>Carga y autonomía</h4>" +
         "<ul>" +
@@ -307,6 +314,7 @@ registrarTema({
         "<li>Los dispositivos <strong>USB</strong> son más eficientes que los conectados a la red eléctrica (cada transformador añade pérdidas).</li>" +
         "</ul>" +
         "<p><strong>Gasto vampiro</strong>: todo el gasto producido por tener un dispositivo enchufado <strong>sin utilizarse</strong> (el stand by). En España es del <strong>2,3 %</strong>. Monitores, sobremesas e impresoras son de los que más consumen en espera. El lema erróneo es que «un dispositivo apagado no consume».</p>" +
+        '<figure class="figura"><img src="assets/img/tema7/fig7-21.jpg" alt="Gasto vampiro de los dispositivos en stand by" loading="lazy"><figcaption>Figura 7.21 del libro — El gasto vampiro: consumo de los aparatos enchufados sin usarse.</figcaption></figure>' +
         "<h4>Gasto de los equipos</h4>" +
         "<ul>" +
         "<li>El <strong>microprocesador (CPU) es el elemento que más energía consume</strong>. El <strong>TDP</strong> (Thermal Design Power) son los vatios que necesita: a más vatios, más rendimiento pero más calor y consumo (un Core i7 puede consumir 45 W; un Celeron, 6 W; un Atom, unos 2 W).</li>" +

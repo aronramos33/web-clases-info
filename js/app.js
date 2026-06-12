@@ -78,17 +78,23 @@ function vistaInicio() {
 
 function bloqueMapaMental(tema) {
   if (!tema.mapa || !tema.mapa.length) return "";
-  let html = '<section class="seccion" aria-labelledby="t-mapa"><h2 id="t-mapa">🗺️ Mapa del tema</h2><ul class="mapa-mental">';
+  let html =
+    '<section class="seccion" aria-labelledby="t-mapa"><h2 id="t-mapa">🗺️ Mapa del tema</h2>' +
+    '<div class="mapa-arbol">' +
+    '<p class="nodo nodo-raiz">Tema ' + tema.id + ". " + esc(tema.titulo) + "</p>" +
+    '<ul class="arbol">';
   tema.mapa.forEach(function (rama) {
-    html += '<li class="mapa-rama"><strong>' + esc(rama.titulo) + "</strong>";
+    html += '<li><span class="nodo nodo-rama">' + esc(rama.titulo) + "</span>";
     if (rama.hijos && rama.hijos.length) {
       html += "<ul>";
-      rama.hijos.forEach(function (h) { html += "<li>" + esc(h) + "</li>"; });
+      rama.hijos.forEach(function (h) {
+        html += '<li><span class="nodo nodo-hoja">' + esc(h) + "</span></li>";
+      });
       html += "</ul>";
     }
     html += "</li>";
   });
-  html += "</ul></section>";
+  html += "</ul></div></section>";
   return html;
 }
 

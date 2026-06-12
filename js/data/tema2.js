@@ -102,6 +102,7 @@ registrarTema({
       html:
         "<p>Los <strong>conectores</strong> son elementos de interconexión entre los componentes internos del equipo y los dispositivos externos (periféricos). Están <strong>estandarizados</strong>.</p>" +
         "<h4>2.2.1 Conectores externos</h4>" +
+        '<figure class="figura"><img src="assets/img/tema2/fig2-01.jpg" alt="Panel trasero de una placa base con los conectores PS2, VGA, DVI, HDMI, Ethernet, USB 2.0, USB 3.0 y sonido etiquetados" loading="lazy"><figcaption>Figura 2.1 del libro — Conectores externos de una placa base.</figcaption></figure>' +
         "<p><strong>A) USB.</strong> Uno de los más utilizados por su simplicidad, resistencia y fiabilidad:</p>" +
         "<ul>" +
         "<li><strong>Plug and play</strong>: se conecta y ya puede utilizarse.</li>" +
@@ -110,6 +111,7 @@ registrarTema({
         "<li><strong>Tipos de conector</strong>: tipo A, tipo B, mini, micro-B (muy usado en discos duros externos)…</li>" +
         "<li><strong>USB 3.1 (SuperSpeed USB 10 Gbps)</strong>: el doble de velocidad que el 3.0, totalmente retrocompatible y con mejor eficiencia energética.</li>" +
         "</ul>" +
+        '<figure class="figura"><img src="assets/img/tema2/fig2-02.jpg" alt="Detalle de un conector USB 3.0 micro-B y su puerto" loading="lazy"><figcaption>Figura 2.2 del libro — Tipos de conectores USB (detalle del micro-B).</figcaption></figure>' +
         "<p><strong>B) Thunderbolt.</strong> Puerto de comunicaciones de los ordenadores <strong>Apple</strong> (inventado por <strong>Intel</strong>, igual que el USB). Transmite vídeo, audio y datos. Su alta velocidad se debe a su <strong>conexión óptica</strong> (pulsos de luz). Permite conectar hasta <strong>6 dispositivos en cadena</strong> y es <strong>4 veces más rápido que el USB 3.0</strong> al trabajar con <strong>dos canales de 10 Gb/s</strong> simultáneos.</p>" +
         "<p><strong>C) Conector de sonido.</strong> Jacks por colores:</p>" +
         '<div class="tabla-scroll"><table><caption>Colores de los conectores de sonido</caption>' +
@@ -139,7 +141,8 @@ registrarTema({
         "<li><strong>Front Panel</strong>: jumpers para el botón de encendido (Power SW), reset (Reset SW), led del disco (HDD LED) y led de encendido (Power LED).</li>" +
         "<li><strong>PC speaker</strong>: solo se usa en el arranque para que el <strong>POST</strong> avise de errores con pitidos.</li>" +
         "<li><strong>Conectores de sonido interno</strong> de la caja.</li>" +
-        "</ol>"
+        "</ol>" +
+        '<figure class="figura"><img src="assets/img/tema2/fig2-06.jpg" alt="Detalle de una placa base con la pila y el puerto M.2" loading="lazy"><figcaption>Figura 2.6 del libro — Placa con un puerto M.2.</figcaption></figure>'
     },
     {
       titulo: "2.3 Caja o chasis",
@@ -182,6 +185,7 @@ registrarTema({
         "<p>⚠️ Hay que <strong>evitar modificar parámetros de la BIOS</strong> sin saber lo que se hace; si se cambia algo, hacerlo <strong>de uno en uno</strong> y comprobar. Si el sistema deja de funcionar bien, usar <strong>\"restablecer los parámetros por defecto\"</strong>.</p>" +
         "<p>Fabricantes principales: <strong>AMI</strong> (American Megatrends Incorporated) y <strong>AWARD-Phoenix</strong>.</p>" +
         "<p>La BIOS es un programa almacenado en una <strong>memoria flash EEPROM</strong>, y sus datos se guardan en la <strong>memoria CMOS</strong>: un tipo de RAM de muy bajo consumo alimentada por la pila <strong>CR-2032 de 3,3 V</strong> de la placa base. Cuando la pila se agota aparecen mensajes tipo <em>\"CMOS Checksum Invalid\"</em> y se pierde la hora.</p>" +
+        '<figure class="figura"><img src="assets/img/tema2/fig2-09.jpg" alt="Primer plano de la pila CR-2032 de la BIOS en la placa base" loading="lazy"><figcaption>Figura 2.9 del libro — Detalle de la pila de la BIOS.</figcaption></figure>' +
         "<h4>Cambiar la secuencia de arranque (práctica 2.1)</h4>" +
         "<ol>" +
         "<li>Acceder a la BIOS pulsando la tecla indicada en el arranque (\"Supr\", \"F2\"…).</li>" +
@@ -227,7 +231,8 @@ registrarTema({
         "</tbody></table></div>" +
         "<p>⚠️ DDR, DDR2, DDR3 y DDR4 <strong>no son compatibles entre sí</strong>: difieren en pines y la muesca está en sitios distintos para impedir insertar la memoria en un slot erróneo.</p>" +
         "<h4>2.7.3 Memorias SO-DIMM (Small Outline DIMM)</h4>" +
-        "<p>Formato menor para dispositivos compactos: <strong>portátiles, barebones</strong>, placas mini-ITX e incluso impresoras de gama alta. Tienen menos contactos pero mantienen las características de las DIMM normales.</p>"
+        "<p>Formato menor para dispositivos compactos: <strong>portátiles, barebones</strong>, placas mini-ITX e incluso impresoras de gama alta. Tienen menos contactos pero mantienen las características de las DIMM normales.</p>" +
+        '<figure class="figura"><img src="assets/img/tema2/fig2-12.jpg" alt="Dos módulos de memoria RAM con disipador" loading="lazy"><figcaption>Figura 2.12 del libro — Módulos de memoria.</figcaption></figure>'
     },
     {
       titulo: "2.8 Microprocesador",

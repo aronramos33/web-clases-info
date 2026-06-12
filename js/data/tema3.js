@@ -113,6 +113,7 @@ registrarTema({
       titulo: "3.2 Dispositivos magnéticos: los discos duros",
       html:
         "<p>Los discos duros son, hoy, los <strong>únicos dispositivos magnéticos utilizados</strong>: las cintas y los discos flexibles están obsoletos. Todo dispositivo magnético es una superficie rígida con material magnetizable agrupado en <strong>celdas</strong>, cada una de las cuales almacena <strong>1 bit</strong> (dos estados estables: uno o cero; una celda sin magnetizar no puede interpretarse). Si las celdas son más pequeñas, caben más bits en la misma superficie.</p>" +
+        '<figure class="figura"><img src="assets/img/tema3/fig3-01.jpg" alt="Esquema de las celdas magnetizadas sobre el sustrato y la cabeza lectoescritora, con 1 bit por celda" loading="lazy"><figcaption>Figura 3.1 del libro — Composición y organización de un dispositivo magnético.</figcaption></figure>' +
         "<p>El disco duro tiene partes mecánicas y electrónicas: es un sistema de grabación <strong>magnético y digital</strong>. La información reside en platos metálicos dentro de una carcasa aislada del polvo, con un orificio de aire filtrado (<em>blowhole</em>) que compensa las presiones internas.</p>" +
         "<h4>Partes o elementos de un disco duro</h4>" +
         "<ol>" +
@@ -122,6 +123,7 @@ registrarTema({
         "<li><strong>Cabezas lectoescritoras</strong>: leen y escriben la información en el plato. Hay <strong>una cabeza por cara</strong>: un disco con un solo plato tiene dos cabezas. <strong>Flotan sin tocar la superficie</strong>: con la velocidad de giro (hasta 7200 rpm), el rozamiento provocaría un recalentamiento enorme.</li>" +
         "<li><strong>Zona de aparcamiento</strong>: zona en el <strong>interior del plato</strong> donde se «aparcan» las cabezas. Es más rugosa y tiene una capa de carbono que actúa de lubricante y evita que la cabeza se dañe.</li>" +
         "</ol>" +
+        '<figure class="figura"><img src="assets/img/tema3/fig3-02.jpg" alt="Interior de un disco duro: platos, brazo actuador y cabezas" loading="lazy"><figcaption>Figura 3.2 del libro — Interior de un disco duro antiguo.</figcaption></figure>' +
         "<h4>Zonas de un disco duro</h4>" +
         "<ol>" +
         "<li><strong>Pista</strong>: zona circular del disco. Por convenio, la primera pista es la <strong>más alejada del eje</strong>. Las pistas exteriores son más grandes y tienen más sectores, aprovechando mejor la superficie.</li>" +
@@ -130,6 +132,7 @@ registrarTema({
         "<li><strong>Sector geométrico</strong>: sectores pegados unos a otros pero de pistas diferentes; si el plato fuera una tarta, sería una <strong>ración</strong> de la tarta.</li>" +
         "<li><strong>Cilindro</strong>: la misma pista en los distintos platos (los sectores quedan en una zona cilíndrica).</li>" +
         "</ol>" +
+        '<figure class="figura"><img src="assets/img/tema3/fig3-03.jpg" alt="Diagrama de un plato con la pista, el sector, el clúster y el sector geométrico coloreados" loading="lazy"><figcaption>Figura 3.3 del libro — Zonas de un disco.</figcaption></figure>' +
         "<h4>Parámetros de un disco duro</h4>" +
         "<table><thead><tr><th>Parámetro</th><th>Qué mide</th></tr></thead><tbody>" +
         "<tr><td><strong>Densidad de grabación</strong></td><td>Bits o bytes por unidad de espacio (normalmente bytes por pulgada cuadrada). Unidad de información = byte; unidad de espacio = pulgada.</td></tr>" +
@@ -147,6 +150,7 @@ registrarTema({
         "<p>Los dispositivos ópticos fueron el medio de instalación de sistemas operativos y un soporte de gran capacidad a bajo coste por bit. Frente a los medios magnéticos de la época: el soporte <strong>duraba muchos años</strong> sin degradarse, <strong>no les afectaban los campos magnéticos</strong> y aguantaban golpes y humedad. Los lectores eran tan económicos que todo equipo traía lector de CD o DVD de serie.</p>" +
         "<p>CD y DVD tienen la misma apariencia externa pero composición diferente; ambos usan soporte de <strong>policarbonato</strong> (material fácil de moldear, flexible y resistente, usado también en gafas). La información se representa con hoyos microscópicos llamados <strong>pits</strong> y zonas planas llamadas <strong>lands</strong>. En los DVD caseros, el láser <strong>quema</strong> zonas con el mismo efecto que un pit. El láser rebota en las zonas planas y no refleja igual en los pits: así el lector interpreta la información.</p>" +
         "<p>Capas de un DVD: <strong>etiqueta → capa de policarbonato → reflector metálico → capa de policarbonato</strong>.</p>" +
+        '<figure class="figura"><img src="assets/img/tema3/fig3-07.jpg" alt="Esquema de las cuatro capas de un DVD: etiqueta, policarbonato, reflector metálico y policarbonato" loading="lazy"><figcaption>Figura 3.7 del libro — Capas de un DVD.</figcaption></figure>' +
         "<p><em>Curiosidades del libro:</em> el agujero interior del CD tiene el tamaño de la moneda de diez céntimos de florín holandés (por Kees Immink, uno de sus inventores); su diámetro es de 12,7 cm para que cupiera en los bolsillos de las camisas (según Sony). Los DVD+R no llevan el logotipo de DVD para no pagar licencia a DVD Forum.</p>"
     },
     {
@@ -183,7 +187,8 @@ registrarTema({
         "<tr><td><strong>SATA</strong></td><td>Similar o poco superior a una SSD SATA convencional</td><td>—</td></tr>" +
         "<tr><td><strong>PCI-E / NVMe</strong></td><td>Muy superior: hasta <strong>6 veces más rápido</strong></td><td>Anula el puerto PCI-E más cercano</td></tr>" +
         "</tbody></table>" +
-        "<p><strong>NVMe</strong> (<em>Non-Volatile Memory Express</em>) se diseñó desde cero aprovechando la baja latencia y el paralelismo del puerto PCI Express, mejorando la transferencia y la eficiencia energética en suspensión o hibernación. Para placas sin conector M.2 existen <strong>adaptadores PCI-E a M.2</strong> (conectores SFF-8639).</p>"
+        "<p><strong>NVMe</strong> (<em>Non-Volatile Memory Express</em>) se diseñó desde cero aprovechando la baja latencia y el paralelismo del puerto PCI Express, mejorando la transferencia y la eficiencia energética en suspensión o hibernación. Para placas sin conector M.2 existen <strong>adaptadores PCI-E a M.2</strong> (conectores SFF-8639).</p>" +
+        '<figure class="figura"><img src="assets/img/tema3/fig3-09.jpg" alt="Tarjeta adaptadora PCI-E X4 a M.2" loading="lazy"><figcaption>Figura 3.9 del libro — Adaptador PCI-E X4 a M.2.</figcaption></figure>'
     },
     {
       titulo: "3.5 Estructura lógica de un dispositivo de almacenamiento",

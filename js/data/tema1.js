@@ -143,6 +143,7 @@ registrarTema({
         "<tr><td>Fusible</td><td>Circuito integrado</td></tr>" +
         "<tr><td>Interruptor, cable</td><td>Microprocesador</td></tr>" +
         "</tbody></table></div>" +
+        '<figure class="figura"><img src="assets/img/tema1/fig1-07.jpg" alt="Fotografías de componentes pasivos (resistencia, condensador, bobina, interruptor) y componentes activos (transistor, chip, diodo)" loading="lazy"><figcaption>Figura 1.7 del libro — Componentes pasivos y componentes activos.</figcaption></figure>' +
         "<h4>1.3.1 Componentes pasivos</h4>" +
         "<p><strong>A) La resistencia.</strong> Consume potencia en el circuito. Se fabrica con materiales como carbón o vidrio. Su valor se mide en <strong>ohmios (Ω)</strong>, en honor a Georg Simon Ohm. Su valor se indica con <strong>bandas de colores</strong> que se leen de izquierda a derecha: dos primeras bandas = cifras, tercera = multiplicador, y la banda más separada = <strong>tolerancia</strong> (dorado ±5 %, plateado ±10 %).</p>" +
         '<div class="tabla-scroll"><table><caption>Código de colores de las resistencias</caption>' +
@@ -162,6 +163,7 @@ registrarTema({
         "</tbody></table></div>" +
         "<p><em>Ejemplo del libro:</em> rojo-violeta-naranja + dorado = 27 × 1000 = <strong>27 000 Ω (27 kΩ) ±5 %</strong>.</p>" +
         "<p><strong>B) El condensador.</strong> Quizá el componente más común en cualquier circuito. Su función es <strong>almacenar energía</strong>. Está formado por dos capas de metal separadas por un aislante o <strong>dieléctrico</strong>. Su capacidad se mide en <strong>faradios (F)</strong>. Tipos: mkp, cerámicos, electrolíticos, de lenteja, de papel…</p>" +
+        '<figure class="figura"><img src="assets/img/tema1/fig1-11.jpg" alt="Secuencia de fotos del despiece de un condensador electrolítico" loading="lazy"><figcaption>Figura 1.11 del libro — Despiece de un condensador (práctica 1.1).</figcaption></figure>' +
         "<p><strong>C) El transformador.</strong> Permite <strong>aumentar o disminuir el voltaje</strong> de un circuito. Se basa en la <strong>inducción</strong>: sobre un núcleo de hierro se enrollan dos cables (primario y secundario); según el número de vueltas de cada uno, el voltaje sube o baja.</p>" +
         "<p><strong>D) El fusible.</strong> Es un <strong>elemento de protección</strong>: un hilo de metal muy delgado que se funde por el calor cuando pasa más corriente de la permitida, protegiendo el resto del circuito. Se reemplaza por otro de las <strong>mismas características</strong> (mismos amperios).</p>" +
         "<h4>1.3.2 Componentes activos</h4>" +
@@ -169,6 +171,7 @@ registrarTema({
         "<p><strong>B) El transistor.</strong> Por número, es el componente electrónico <strong>más utilizado</strong>: los microprocesadores llevan millones (el Core i9 Skylake tiene 2600 millones). También está en las RAM y en la mayoría de circuitos integrados.</p>" +
         "<p><strong>C) El diodo.</strong> Formado por semiconductores (silicio, germanio). Permite el paso de la corriente <strong>solo en un sentido</strong>. Los más comunes son los <strong>led</strong> (Light Emitting Diode), que emiten luz; también los hay ultravioleta e infrarrojos.</p>" +
         "<p><strong>D) Los circuitos integrados.</strong> Base de la electrónica moderna: una delgada lámina de <strong>silicio</strong> sobre la que, mediante <strong>fotolitografía</strong>, se crean transistores, resistencias, condensadores, etc.</p>" +
+        '<figure class="figura"><img src="assets/img/tema1/fig1-17.jpg" alt="Fotografías de varias placas de circuito impreso" loading="lazy"><figcaption>Figura 1.17 del libro — Ejemplos de circuitos impresos.</figcaption></figure>' +
         "<p><strong>E) El microprocesador.</strong> El circuito integrado <strong>más complejo</strong>: millones de transistores. Es el \"cerebro\" del equipo. Hay micros en vehículos, ascensores, smartphones, drones, robots…</p>"
     },
     {
