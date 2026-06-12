@@ -184,7 +184,7 @@ registrarTema({
         "</ol>" +
         "<p>La RAM está formada por <strong>biestables</strong>: celdillas que almacenan energía que se traduce en información binaria (cada celdilla es un <strong>bit</strong>). Como los biestables pierden la energía con el tiempo, hace falta el <strong>refresco de memoria</strong>: un proceso que lee el valor y lo vuelve a grabar para que no se pierda.</p>" +
         "<p>⚡ <strong>Velocidades</strong>: el acceso a RAM es del orden de <strong>nanosegundos</strong> (10⁻⁹ s) y el del disco duro de <strong>milisegundos</strong> (10⁻³ s). Por eso nunca se ejecuta un programa desde la memoria secundaria.</p>" +
-        "<p>💡 La memoria <strong>DDR RAM</strong> tiene <em>doble tasa de transferencia</em>: transmite información por dos canales distintos de forma simultánea, multiplicando la velocidad.</p>" +
+        "<p>💡 La memoria <strong>DDR RAM</strong> (<em>Double Data Rate</em>, doble tasa de transferencia) transmite información por dos canales distintos de forma simultánea, multiplicando la velocidad.</p>" +
         "<h4>1.4.1 Memoria caché</h4>" +
         "<p>Se sitúa <strong>entre dos dispositivos, uno rápido y otro lento</strong>, para no ralentizar al rápido, almacenando la información más frecuente. Es común entre el procesador y la memoria central. Características: es <strong>más rápida</strong> que la memoria central, pero <strong>más cara y de menor capacidad</strong>.</p>" +
         "<h4>1.4.2 Memoria ROM</h4>" +
