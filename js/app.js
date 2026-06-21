@@ -71,6 +71,17 @@ function vistaInicio() {
   });
   html += "</ul>";
 
+  if (typeof REPASO !== "undefined") {
+    html +=
+      '<section class="bloque-repaso" aria-labelledby="t-repaso-inicio">' +
+      '<h2 id="t-repaso-inicio">📝 Repaso global de cara al examen</h2>' +
+      "<p>Ya hemos visto los 7 temas. En la sección de <strong>Repaso</strong> tienes el resumen, los conceptos clave, el mapa y los puntos imprescindibles de cada tema en un solo sitio, " +
+      "más <strong>4 paquetes de 20 preguntas variadas</strong> de los temas 1-7 para empezar a repasar.</p>" +
+      '<p><a class="boton boton-primario" href="#/repaso">📝 Ir al repaso</a> ' +
+      '<a class="boton boton-secundario" href="#/repaso/test">✍️ Hacer los tests de repaso</a></p>' +
+      "</section>";
+  }
+
   $main.innerHTML = html;
 }
 
@@ -197,6 +208,61 @@ function vistaTema(idTema) {
   $main.innerHTML = html;
 }
 
+/* ---------- Vista: repaso global ---------- */
+
+function vistaRepaso() {
+  if (typeof REPASO === "undefined") { vista404(); return; }
+  document.title = "Repaso global · Temas 1-7";
+  sincronizarSelector(null);
+
+  let html =
+    '<p class="miga"><a href="#/">Inicio</a> › Repaso global</p>' +
+    "<h1>📝 " + esc(REPASO.titulo) + "</h1>";
+
+  html += '<nav class="indice-interno" aria-labelledby="r-indice"><h2 id="r-indice">Qué incluye este repaso</h2><ol>';
+  (REPASO.apartados || []).forEach(function (ap, i) {
+    html += '<li><a href="#apartado-' + i + '">' + esc(ap.titulo) + "</a></li>";
+  });
+  html += "</ol>" +
+    '<p><a class="boton boton-primario" href="#/repaso/test">✍️ Hacer los tests de repaso</a></p>' +
+    "</nav>";
+
+  html +=
+    '<section class="seccion" aria-labelledby="r-resumen"><h2 id="r-resumen">📋 Resumen combinado de los temas 1-7</h2>' +
+    '<div class="caja caja-resumen">' + REPASO.resumen + "</div></section>";
+
+  html += bloqueMapaMental(REPASO);
+  html += bloqueConceptos(REPASO);
+  html += bloqueFrases(REPASO);
+  html += bloqueApartados(REPASO);
+
+  html +=
+    '<p style="margin-top:2rem"><a class="boton boton-primario" href="#/repaso/test">✍️ Hacer los tests de repaso</a> ' +
+    '<a class="boton boton-secundario" href="#/">🏠 Volver al inicio</a></p>';
+
+  $main.innerHTML = html;
+}
+
+function vistaRepasoTest() {
+  if (typeof REPASO === "undefined") { vista404(); return; }
+  document.title = "Tests · Repaso global · Temas 1-7";
+  sincronizarSelector(null);
+
+  let html =
+    '<p class="miga"><a href="#/">Inicio</a> › <a href="#/repaso">Repaso global</a> › Tests</p>' +
+    "<h1>✍️ Tests de repaso · Temas 1-7</h1>" +
+    "<p>Elige uno de los <strong>4 paquetes</strong>. Cada paquete tiene <strong>20 preguntas</strong> variadas de los temas 1 al 7. " +
+    'Las preguntas marcadas con <span class="etiqueta-multiple">Respuesta múltiple</span> pueden tener más de una opción correcta.</p>' +
+    '<ul class="paquetes-test" id="paquetes-test"></ul>' +
+    '<div id="zona-quiz" aria-live="polite"></div>' +
+    '<p style="margin-top:2rem"><a class="boton boton-secundario" href="#/repaso">← Volver al repaso</a> ' +
+    '<a class="boton boton-secundario" href="#/">🏠 Inicio</a></p>';
+
+  $main.innerHTML = html;
+
+  Quiz.montarSelectorPaquetes(REPASO, document.getElementById("paquetes-test"), document.getElementById("zona-quiz"));
+}
+
 /* ---------- Vista: tests de un tema ---------- */
 
 function vistaTest(idTema) {
@@ -241,6 +307,10 @@ function enrutar() {
 
   if (partes.length === 0) {
     vistaInicio();
+  } else if (partes[0] === "repaso" && !partes[1]) {
+    vistaRepaso();
+  } else if (partes[0] === "repaso" && partes[1] === "test") {
+    vistaRepasoTest();
   } else if (partes[0] === "tema" && partes[1] && !partes[2]) {
     vistaTema(partes[1]);
   } else if (partes[0] === "tema" && partes[1] && partes[2] === "test") {
